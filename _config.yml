@@ -1,3 +1,7 @@
 title: Fundación Ángeles con Corazón
 description: Fundación en Pasto que rescata, cuida y encuentra hogar para perritos.
 baseurl: "/perritos-pasto"
+
+# Opcional: sube un logo y descomenta
+logo: "/assets/img/logo.png"
+

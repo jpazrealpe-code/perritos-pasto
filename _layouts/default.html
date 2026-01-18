@@ -4,13 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{{ page.title }} · {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
   </head>
 
   <body>
     <header class="topbar">
       <div class="wrapper topbar__inner">
-        <a class="brand" href="{{ site.baseurl }}/">🐾 {{ site.title }}</a>
+        <a class="brand" href="{{ site.baseurl }}/">
+          {% if site.logo %}
+            <img src="{{ site.baseurl }}{{ site.logo }}" alt="Logo" class="brand__logo" />
+            <span>{{ site.title }}</span>
+          {% else %}
+            🐾 <span>{{ site.title }}</span>
+          {% endif %}
+        </a>
 
         <nav class="nav">
           <a href="{{ site.baseurl }}/">Inicio</a>
@@ -32,12 +40,12 @@
       <div class="wrapper footer__grid">
         <div>
           <div class="footer__title">{{ site.title }}</div>
-          <p class="small">Fundación en Pasto: rescate, recuperación y adopción responsable.</p>
+          <p class="small">{{ site.description }}</p>
         </div>
 
         <div>
           <div class="footer__title">Contacto</div>
-          <p class="small"><a href="https://wa.me/573006608605" target="_blank" rel="noopener">300 6608605</a></p>
+          <p class="small"><a href="https://wa.me/573006608605" target="_blank" rel="noopener">WhatsApp: 300 6608605</a></p>
           <p class="small"><a href="{{ site.baseurl }}/contacto">Redes y contacto</a></p>
         </div>
 
@@ -51,3 +59,4 @@
     </footer>
   </body>
 </html>
+

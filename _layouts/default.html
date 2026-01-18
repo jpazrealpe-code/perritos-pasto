@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title }} · {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="wrapper topbar__inner">
+        <a class="brand" href="{{ site.baseurl }}/">🐾 {{ site.title }}</a>
+
+        <nav class="nav">
+          <a href="{{ site.baseurl }}/">Inicio</a>
+          <a href="{{ site.baseurl }}/adopta">Adopta</a>
+          <a href="{{ site.baseurl }}/ayudar">Dona</a>
+          <a href="{{ site.baseurl }}/historias">Blog</a>
+          <a href="{{ site.baseurl }}/contacto">Contáctanos</a>
+        </nav>
+
+        <a class="btn btn--primary btn--small" href="https://wa.me/573006608605" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__grid">
+        <div>
+          <div class="footer__title">{{ site.title }}</div>
+          <p class="small">Fundación en Pasto: rescate, recuperación y adopción responsable.</p>
+        </div>
+
+        <div>
+          <div class="footer__title">Contacto</div>
+          <p class="small"><a href="https://wa.me/573006608605" target="_blank" rel="noopener">300 6608605</a></p>
+          <p class="small"><a href="{{ site.baseurl }}/contacto">Redes y contacto</a></p>
+        </div>
+
+        <div>
+          <div class="footer__title">Donaciones</div>
+          <p class="small">Nequi (pendiente número/QR)</p>
+          <p class="small"><a href="{{ site.baseurl }}/ayudar">Ver cómo ayudar</a></p>
+        </div>
+      </div>
+      <div class="wrapper small footer__bottom">© {{ "now" | date: "%Y" }} {{ site.title }}</div>
+    </footer>
+  </body>
+</html>

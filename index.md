@@ -8,28 +8,28 @@ title: Inicio
     <span class="kicker">Fundación • Pasto</span>
     <h1>Fundación Ángeles con Corazón</h1>
     <p class="lead">
-      Rescatamos, cuidamos y conectamos perritos con hogares responsables.
-      Tu ayuda se convierte en comida, veterinario, transporte y hogares de paso.
+      Rescatamos vidas y construimos hogares. Atendemos perritos en situación de abandono,
+      coordinamos atención veterinaria y promovemos adopción responsable.
     </p>
 
     <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ site.baseurl }}/adopta">🐶 Adopta</a>
-      <a class="btn btn--ghost" href="{{ site.baseurl }}/ayudar">❤️ Dona con Nequi</a>
+      <a class="btn btn--primary" href="{{ site.baseurl }}/adopta">🐶 Ver perritos en adopción</a>
+      <a class="btn btn--ghost" href="{{ site.baseurl }}/ayudar">❤️ Donar con Nequi</a>
       <a class="btn btn--ghost" href="https://wa.me/573006608605" target="_blank" rel="noopener">💬 WhatsApp</a>
     </div>
 
     <div class="hero__mini">
       <div class="mini">
         <div class="mini__title">Adopción responsable</div>
-        <div class="mini__text">Proceso claro + seguimiento.</div>
+        <div class="mini__text">Filtros + seguimiento para hogares seguros.</div>
       </div>
       <div class="mini">
-        <div class="mini__title">Rescate y recuperación</div>
+        <div class="mini__title">Rescate & recuperación</div>
         <div class="mini__text">Apoyo real en casos vulnerables.</div>
       </div>
       <div class="mini">
-        <div class="mini__title">Pasto</div>
-        <div class="mini__text">Impacto local y comunitario.</div>
+        <div class="mini__title">Trabajo local</div>
+        <div class="mini__text">Impacto en Pasto y alrededores.</div>
       </div>
     </div>
   </div>
@@ -37,8 +37,8 @@ title: Inicio
   <div class="hero__media">
     <img src="{{ site.baseurl }}/assets/img/hero.png" alt="Fundación Ángeles con Corazón - Rescate y adopción">
     <div class="hero__badge">
-      <div class="badge__title">¿Quieres ayudar ahora?</div>
-      <div class="badge__text">Dona con Nequi o comparte un perrito en redes.</div>
+      <div class="badge__title">Ayuda inmediata</div>
+      <div class="badge__text">Tu aporte se convierte en comida, medicina y veterinario.</div>
       <a class="btn btn--small btn--primary" href="{{ site.baseurl }}/ayudar">Ir a Donaciones</a>
     </div>
   </div>
@@ -83,9 +83,9 @@ title: Inicio
 
 <section class="section">
   <div class="section__head">
-    <h2>Nuestra misión</h2>
+    <h2>¿Qué hacemos?</h2>
     <p class="small">
-      Proteger y mejorar la vida de perritos vulnerables, promoviendo una comunidad más consciente y solidaria.
+      Nos enfocamos en rescate, recuperación y adopción responsable con apoyo de la comunidad.
     </p>
   </div>
 
@@ -134,32 +134,73 @@ title: Inicio
 <section class="section">
   <div class="section__head">
     <h2>¿Cómo puedes ayudar?</h2>
-    <p class="small">Cuatro maneras simples de apoyar esta causa.</p>
+    <p class="small">Cuatro formas rápidas de apoyar esta causa.</p>
   </div>
 
   <div class="grid grid--4">
     <div class="card">
-      <h3>Adopta</h3>
-      <p>Dale un hogar a un peludito que lo necesita.</p>
+      <h3>🐾 Adopta</h3>
+      <p>Conoce a tu compañero ideal y dale un hogar para siempre.</p>
       <p><a href="{{ site.baseurl }}/adopta">Ver perritos →</a></p>
     </div>
 
     <div class="card">
-      <h3>Dona</h3>
-      <p>Nequi: comida, veterinario, medicamentos y transporte.</p>
+      <h3>❤️ Dona</h3>
+      <p>Nequi para comida, veterinario, medicamentos y transporte.</p>
       <p><a href="{{ site.baseurl }}/ayudar">Donar →</a></p>
     </div>
 
     <div class="card">
-      <h3>Hogar de paso</h3>
-      <p>Recibe temporalmente a un peludito mientras se recupera.</p>
-      <p><a href="{{ site.baseurl }}/ayudar">Quiero ayudar →</a></p>
+      <h3>🏡 Hogar de paso</h3>
+      <p>Un lugar temporal mientras se recupera y encuentra familia.</p>
+      <p><a href="{{ site.baseurl }}/ayudar">Quiero ser hogar →</a></p>
     </div>
 
     <div class="card">
-      <h3>Difunde</h3>
-      <p>Comparte publicaciones y adopciones en tus redes.</p>
+      <h3>📣 Difunde</h3>
+      <p>Comparte adopciones y jornadas en redes para llegar a más personas.</p>
       <p><a href="{{ site.baseurl }}/contacto">Ver redes →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="donations__card">
+    <h2>¿Quieres ser hogar de paso?</h2>
+    <p class="small">
+      Un hogar de paso salva vidas. Si puedes apoyar con un espacio temporal,
+      nosotros te acompañamos con el proceso y recomendaciones.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="https://wa.me/573006608605" target="_blank" rel="noopener">💬 Hablar por WhatsApp</a>
+      <a class="btn btn--ghost" href="{{ site.baseurl }}/ayudar">Ver cómo ayudar</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <h2>Casos felices</h2>
+    <p class="small">Historias reales que nos motivan a seguir.</p>
+  </div>
+
+  <div class="grid grid--3">
+    <div class="card">
+      <h3>“Luna encontró hogar”</h3>
+      <p class="small">Rescate → recuperación → adopción.</p>
+      <p>Gracias a la comunidad, Luna se recuperó y hoy vive en un hogar amoroso.</p>
+    </div>
+
+    <div class="card">
+      <h3>“Max volvió a confiar”</h3>
+      <p class="small">Atención veterinaria + hogar de paso.</p>
+      <p>Con paciencia y cuidados, Max volvió a jugar y ahora está en adopción responsable.</p>
+    </div>
+
+    <div class="card">
+      <h3>“Nala, una segunda oportunidad”</h3>
+      <p class="small">Recuperación y seguimiento.</p>
+      <p>Nala salió adelante y hoy disfruta caminatas, cariño y seguridad.</p>
     </div>
   </div>
 </section>
@@ -168,7 +209,7 @@ title: Inicio
   <div class="section__head section__headRow">
     <div>
       <h2>Perritos en adopción</h2>
-      <p class="small">Se cargarán automáticamente desde <code>_perritos</code> cuando la creemos.</p>
+      <p class="small">Aquí mostraremos el catálogo automático cuando creemos <code>_perritos</code>.</p>
     </div>
     <a class="btn btn--ghost" href="{{ site.baseurl }}/adopta">Ver todos →</a>
   </div>

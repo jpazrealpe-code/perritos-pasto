@@ -5,8 +5,8 @@ title: Inicio
 
 <section class="hero">
   <div class="hero__content">
-    <span class="kicker">Fundación • Pasto</span>
-    <h1>Perritos Pasto</h1>
+    <span class="kicker">Fundación ángeles con corazón • Pasto</span>
+    <h1>Fundación ángeles con corazón</h1>
     <p class="lead">
       Rescatamos, cuidamos y conectamos perritos con hogares responsables.
       Tu ayuda se convierte en comida, veterinario, transporte y hogares de paso.
@@ -35,7 +35,7 @@ title: Inicio
   </div>
 
   <div class="hero__media">
-    <img src="{{ site.baseurl }}/assets/img/hero.png" alt="Perritos Pasto - Rescate y adopción">
+    <img src="{{ site.baseurl }}/assets/img/hero.png" alt="Fundacion angeles con corazón - Rescate y adopción">
     <div class="hero__badge">
       <div class="badge__title">¿Quieres ayudar ahora?</div>
       <div class="badge__text">Dona con Nequi o comparte un perrito en redes.</div>

@@ -30,35 +30,43 @@ body{
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
   color: var(--text);
-  background: var(--bg);
   line-height: 1.55;
 
-   /* FONDO */
-  background-image: url("../img/fondo.png");
+  /* Para que el fondo se vea como marco */
+  min-height: 100vh;
+  padding: 18px;
+
+  /* Fondo global - ruta ABSOLUTA para GitHub Pages */
+  background-color: var(--bg);
+  background-image: url("/perritos-pasto/assets/img/fondo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
-
 }
 
+/* Contenedor con efecto vidrio */
 main.wrapper{
+  max-width: var(--max);
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(8px);
   border-radius: 24px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin: 18px auto;
 }
+
+/* Links */
 a{ color: inherit; text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
+/* Base wrapper */
 .wrapper{
   max-width: var(--max);
   margin: 0 auto;
   padding: 18px;
 }
 
+/* Text helpers */
 .small{ color: var(--muted); font-size: .95rem; }
 .lead{ color: var(--muted); font-size: 1.05rem; }
 
@@ -82,6 +90,7 @@ code{
   font-size: .92em;
 }
 
+/* Images */
 img{
   width: 100%;
   height: auto;
@@ -90,7 +99,9 @@ img{
   border: 1px solid var(--border);
 }
 
-/* Topbar */
+/* =========================================
+   Topbar
+   ========================================= */
 .topbar{
   position: sticky;
   top: 0;
@@ -115,7 +126,7 @@ img{
   letter-spacing: -0.3px;
 }
 
-/* logo when site.logo exists */
+/* Logo square */
 .brand__logo{
   width: 34px;
   height: 34px;
@@ -123,6 +134,15 @@ img{
   border: 1px solid rgba(225,29,72,.18);
   background: #fff;
   object-fit: cover;
+}
+
+/* Logo full (if you use logo-only header) */
+.brand__logoFull{
+  height: 46px;
+  width: auto;
+  border: none;
+  background: transparent;
+  border-radius: 0;
 }
 
 /* Nav */
@@ -148,7 +168,9 @@ img{
   text-decoration: none;
 }
 
-/* Buttons */
+/* =========================================
+   Buttons
+   ========================================= */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -186,7 +208,9 @@ img{
 .btn--small{ padding: 10px 12px; border-radius: 12px; }
 .btn--full{ width: 100%; }
 
-/* Grids / Cards */
+/* =========================================
+   Grids / Cards
+   ========================================= */
 .grid{ display:grid; gap: 16px; }
 .grid--2{ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
 .grid--3{ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
@@ -222,11 +246,11 @@ img{
   background: rgba(255,255,255,.7);
 }
 
-/* Sections */
+/* =========================================
+   Sections
+   ========================================= */
 .section{ padding: 24px 0; }
-
 .section__head{ margin-bottom: 14px; }
-
 .section__headRow{
   display:flex;
   align-items:flex-end;
@@ -235,7 +259,9 @@ img{
   flex-wrap: wrap;
 }
 
-/* Hero */
+/* =========================================
+   Hero
+   ========================================= */
 .hero{
   display:grid;
   grid-template-columns: 1.15fr .85fr;
@@ -307,7 +333,9 @@ img{
 .mini__title{ font-weight: 950; }
 .mini__text{ color: var(--muted); font-size: .95rem; }
 
-/* Donations block */
+/* =========================================
+   Donations block
+   ========================================= */
 .donations{ padding: 4px 0 22px; }
 
 .donations__card{
@@ -351,17 +379,23 @@ img{
   color: var(--brand);
 }
 
-/* Page layout */
+/* =========================================
+   Page layout
+   ========================================= */
 .page{ padding: 10px 0 26px; }
 .page__title{ margin: 18px 0 10px; font-size: 2rem; letter-spacing: -0.6px; }
 .page__content{ padding-bottom: 12px; }
 
-/* Footer */
+/* =========================================
+   Footer
+   ========================================= */
 .footer{
   margin-top: 26px;
   padding: 22px 0;
   border-top: 1px solid var(--border);
   background: var(--soft);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 .footer__grid{
@@ -373,8 +407,12 @@ img{
 .footer__title{ font-weight: 1000; }
 .footer__bottom{ margin-top: 10px; color: var(--muted2); }
 
-/* Mobile */
+/* =========================================
+   Mobile
+   ========================================= */
 @media (max-width: 520px){
+  body{ padding: 10px; }
   .btn{ width: 100%; }
   .topbar__inner{ align-items:flex-start; }
 }
+

@@ -3,36 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ page.title }} · {{ site.title }}</title>
+
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}" />
+
+    <!-- Tipografía pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
   </head>
 
   <body>
     <header class="topbar">
       <div class="wrapper topbar__inner">
-        <a class="brand" href="{{ site.baseurl }}/">
-          {% if site.logo %}
-            <img src="{{ site.baseurl }}{{ site.logo }}" alt="Logo" class="brand__logo" />
-            <span>{{ site.title }}</span>
-          {% else %}
-            🐾 <span>{{ site.title }}</span>
-          {% endif %}
+        <a class="brand" href="{{ site.baseurl }}/" aria-label="Ir al inicio">
+          <img src="{{ site.baseurl }}/assets/img/logo.png" class="brand__logoFull" alt="{{ site.title }}">
         </a>
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Navegación principal">
           <a href="{{ site.baseurl }}/">Inicio</a>
           <a href="{{ site.baseurl }}/adopta">Adopta</a>
-          <a href="{{ site.baseurl }}/ayudar">Dona</a>
-          <a href="{{ site.baseurl }}/historias">Blog</a>
-          <a href="{{ site.baseurl }}/contacto">Contáctanos</a>
+          <a href="{{ site.baseurl }}/ayudar">Donaciones</a>
+          <a href="{{ site.baseurl }}/contacto">Contacto</a>
         </nav>
 
-        <a class="btn btn--primary btn--small" href="https://wa.me/573006608605" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="topbar__cta">
+          <a class="btn btn--ghost btn--small" href="{{ site.baseurl }}/adopta">Ver perritos</a>
+          <a class="btn btn--primary btn--small" href="https://wa.me/573006608605" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
       </div>
     </header>
 
-    <main class="wrapper">
+    <main class="wrapper shell">
       {{ content }}
     </main>
 
@@ -41,22 +45,31 @@
         <div>
           <div class="footer__title">{{ site.title }}</div>
           <p class="small">{{ site.description }}</p>
+          <div class="footer__chips">
+            <span class="chip">Pasto</span>
+            <span class="chip">Rescate</span>
+            <span class="chip">Adopción</span>
+            <span class="chip">Hogar de paso</span>
+          </div>
         </div>
 
         <div>
           <div class="footer__title">Contacto</div>
           <p class="small"><a href="https://wa.me/573006608605" target="_blank" rel="noopener">WhatsApp: 300 6608605</a></p>
-          <p class="small"><a href="{{ site.baseurl }}/contacto">Redes y contacto</a></p>
+          <p class="small"><a href="{{ site.baseurl }}/contacto">Redes sociales</a></p>
         </div>
 
         <div>
-          <div class="footer__title">Donaciones</div>
-          <p class="small">Nequi (pendiente número/QR)</p>
-          <p class="small"><a href="{{ site.baseurl }}/ayudar">Ver cómo ayudar</a></p>
+          <div class="footer__title">Accesos</div>
+          <p class="small"><a href="{{ site.baseurl }}/adopta">Perritos en adopción</a></p>
+          <p class="small"><a href="{{ site.baseurl }}/ayudar">Cómo donar</a></p>
+          <p class="small"><a href="{{ site.baseurl }}/contacto">Voluntariado / Hogar de paso</a></p>
         </div>
       </div>
-      <div class="wrapper small footer__bottom">© {{ "now" | date: "%Y" }} {{ site.title }}</div>
+
+      <div class="wrapper footer__bottom">
+        © {{ "now" | date: "%Y" }} {{ site.title }} · Hecho con amor 🐾
+      </div>
     </footer>
   </body>
 </html>
-

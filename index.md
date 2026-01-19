@@ -44,42 +44,6 @@ title: Inicio
   </div>
 </section>
 
-<section class="donations">
-  <div class="donations__card">
-    <h2>Apoya nuestra labor</h2>
-    <p class="small">
-      Las donaciones cubren alimento, medicamentos, consultas, transporte y esterilización.
-      Cada aporte suma 💛
-    </p>
-
-    <div class="donations__methods">
-      <div class="method">
-        <div class="method__title">Nequi</div>
-        <div class="method__text">Pega aquí tu número Nequi</div>
-      </div>
-
-      <div class="method">
-        <div class="method__title">QR Nequi</div>
-        <div class="method__text">
-          <img class="qr" src="{{ site.baseurl }}/assets/img/qr-nequi.png" alt="QR Nequi">
-          <div class="small">Sube tu QR como <code>assets/img/qr-nequi.png</code></div>
-        </div>
-      </div>
-
-      <div class="method">
-        <div class="method__title">Contacto</div>
-        <div class="method__text">
-          <a href="https://wa.me/573006608605" target="_blank" rel="noopener">WhatsApp 300 6608605</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ site.baseurl }}/ayudar">❤️ Ver Donaciones</a>
-      <a class="btn btn--ghost" href="{{ site.baseurl }}/proceso">📋 Proceso de adopción</a>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="section__head">

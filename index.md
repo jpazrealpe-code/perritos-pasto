@@ -7,7 +7,8 @@ title: Inicio
   <div class="hero__content">
     <span class="kicker">Fundación • Pasto</span>
     <div class="homeLogo">
-  <img src="{{ site.baseurl }}/assets/img/logo2.png" alt="Fundación Ángeles con Corazón">
+  <img src="{{ site.baseurl }}/assets/img/logo2.png" alt="Fundación Ángeles con Corazón" />
+
 </div>
 
     <h1>Rescatamos vidas. Construimos hogares.</h1>
